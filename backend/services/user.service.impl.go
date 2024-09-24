@@ -221,3 +221,7 @@ func (u *UserServiceImpl) Unfollow(usernames interface{}, userId string) (*[]str
 	}
 	return &unfollowing, nil
 }
+
+// func (u *UserServiceImpl) CreateaPost(post *models.Post) (*models.Post, error) {
+
+// }

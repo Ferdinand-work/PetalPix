@@ -155,4 +155,5 @@ func (uc *UserController) RegisterUserRoutes(rg *gin.RouterGroup) {
 	userRoute.POST("/follow/:id", uc.Follow)
 	userRoute.GET("/getFollowing/:id", uc.GetFollowing)
 	userRoute.POST("/unfollow/:id", uc.Unfollow)
+	userRoute.POST("/createPost/:id")
 }

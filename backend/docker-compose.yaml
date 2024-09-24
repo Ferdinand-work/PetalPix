@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  my-service:
+    image: backend-my-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: production
+      LOG_LEVEL: "info"  # or "debug" for more verbose logging
+    ports:
+      - "9095:9095"
+    volumes:
+      - ./config.yml:/app/config.yml
+      - ./logs:/app/logs  # Mount a logs directory
+    logging:
+      driver: "json-file"  # You can change this based on your needs
+      options:
+        max-size: "10m"    # Limit log file size
+        max-file: "3"      # Keep only the last 3 log files
+
