@@ -1,1 +1,0 @@
-time="2024-09-23T10:18:14Z" level=fatal msg="Failed to ping MongoDB: server selection error: server selection timeout, current topology: { Type: Unknown, Servers: [{ Addr: uccdb.airtel.in:37017, Type: Unknown, Last error: dial tcp 10.222.166.98:37017: i/o timeout }, ] }"
